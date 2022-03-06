@@ -252,18 +252,20 @@ footer {
 /* Form */
 
 .form-section {
-    clear: both;
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-image: url(../Images/formbg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 900px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .signup-form {
     margin: 150px 10% 0 0;
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
-    max-width: 400px;
+    max-width: 500px;
     position: absolute;
     left: 10%;
     padding: 30px;
