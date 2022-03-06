@@ -12,10 +12,10 @@ body {
     color: #3a3a3a;
 }
 
-/* heading and logo */
+/* headings and logo */
 
 h1, h2 {
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -25,32 +25,31 @@ h1, h2 {
     float: left;
     font-size: 280%;
     margin-left: 30px;
-
 }
 
-/* navigation and links*/
+/* navigation links */
 
-#menue {
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#menue, #logo {
+#menu, #logo {
     line-height: 75px;
 }
 
-#menue li {
+#menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
 }
 
-#menue a {
+#menu a {
     text-decoration: none;
     color: inherit;
 }
 
-#menue a:hover {
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 
@@ -58,7 +57,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image and cover text*/
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -72,32 +71,30 @@ h1, h2 {
     color: #fff;
 }
 
-
 #hero-image {
     height: 600px;
     width: 100%;
     background: url(../Images/hero-image.webp) no-repeat center center;
 
-    /* animates zoom effect on loading page*/
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-/* create the level of zoom for hero image*/
-
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
-    to {
+    to{
         transform: scale(1.1);
     }
 }
 
 #cover-text {
     font-size: 130%;
-    font-family: oswald, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
 
@@ -136,7 +133,7 @@ h1, h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
-    }
+}
 
 hr {
     border-top: 1px solid #3a3a3a;
@@ -171,7 +168,7 @@ hr {
 #welcome {
     text-align: center;
     margin: 20px 0;
-    font-size: 200%;
+    font-size: 280%;
 }
 
 #circle-container {
@@ -186,16 +183,15 @@ hr {
 }
 
 #circle-cover-bg {
+    background: url(../Images/ethos-center-image.jpg) no-repeat center center;
     height: 100%;
-    width: 100%;
-    background: url(../Images/ethos-center-image.jpg) no-repeat center center;    
     border-radius: 50%;
 }
 
 /* event times */
 
 #times {
-    background-image: url('../Images/dublin-city.webp');
+    background-image: url(../Images/dublin-city.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -219,6 +215,8 @@ hr {
     color: #fafafa;
 }
 
+/* footer */
+
 footer {
     height: 150px;
 }
@@ -238,7 +236,7 @@ footer {
     color: #3a3a3a;
 }
 
-/* gallery*/
+/* gallery */
 
 #photos {
     clear: both;
@@ -251,14 +249,71 @@ footer {
     width: 100%;
 }
 
-/* For mediom screen size from 950px wide and down */
+/* Media queries */
 
-@media screen and (max-width: 950px){
-    #menue{
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    #menu {
         clear: left;
         float: left;
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #club-ethos {
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
     }
 }
