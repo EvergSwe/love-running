@@ -245,10 +245,20 @@ footer {
     line-height: 0;
     column-count: 4;
     column-gap: 0;
-
-
 }
 
 #photos > img {
     width: 100%;
+}
+
+/* For mediom screen size from 950px wide and down */
+
+@media screen and (max-width: 950px){
+    #menue{
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
 }
